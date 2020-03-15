@@ -1,0 +1,19 @@
+<div class="background">
+  <div style="padding-top: 20px"></div>
+  <app-header context="distribution"></app-header>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-4 d-flex align-items-stretch" style="padding: 10px;"
+           *ngFor="let distributionCenter of distributionCenters">
+        <div class="card" style="width: 20rem;">
+          <h5 class="card-title">{{distributionCenter.name}}</h5>
+          <div class="text"><b>Endereço: </b> {{distributionCenter.andress}}</div>
+          <div class="text"><b>CEP: </b>{{distributionCenter.cep}}</div>
+          <div class="text"><b>Telefone: </b> {{distributionCenter.phone}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
