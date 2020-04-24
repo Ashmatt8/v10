@@ -1,15 +1,42 @@
-.content {
-  padding: 100px
+.row {
+  margin:5% auto;
 }
 
-.card-title {
-  color: #333333;
-}
-
-.card-text {
-  color: #333333;
-}
 
 .card-img-top {
-  height: 200px;
+  height: 150px;
 }
+
+@media (min-width: 300px) {
+  .row {
+    width: 70%;
+  }
+
+  .card {
+    height: 90%;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row {
+    width: 50%;
+  }
+
+  .card {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    width: 90%;
+  }
+
+  .card {
+    width: 18em;
+  }
+}
+
+

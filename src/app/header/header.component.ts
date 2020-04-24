@@ -9,10 +9,15 @@ import {menuItems} from './menu-itens';
 export class HeaderComponent implements OnInit {
     @Input() context: string;
     menuItens = menuItems;
+    showMenu: boolean = false;
 
   ngOnInit(): void {
     this.menuItens.forEach(i => {
         i.active = i.name === this.context;
     });
+  }
+
+  showMenuItens() {
+    this.showMenu = !this.showMenu;
   }
 }

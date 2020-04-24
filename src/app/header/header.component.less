@@ -12,8 +12,8 @@
   background-color: #FFF;
   overflow: hidden;
   //border: 1px solid black;
-  width: 50%;
   height: 76px;
+  margin-left: 5%;
 }
 
 /* Style the links inside the navigation bar */
@@ -25,20 +25,112 @@
   text-decoration: none;
   font-size: 17px;
   margin-top: 12px;
+  border-radius: 5px;
 }
 
-/* Change the color of links on hover */
 .menu a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
 .menu a.active {
   background-color: #CE181E;
   color: white;
 }
 
-.centralize {
-  margin-left: 25%;
+.menu-list ul {
+  list-style: none;
+  padding-right: 2%;
+}
+
+.menu-list a {
+  color: #333;
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+}
+
+.menu-list a :hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #CE181E;
+  color: white;
+}
+
+.menu-list .menu-list-item {
+  padding: 14px 16px;
+  margin-top: 12px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.fa-list {
+  font-size: 2em;
+  color: #CE181E;
+  padding-top: 20px;
+  padding-right: 10px;
+  display: none;
+}
+
+.logo {
+  float: left;
+  width: 30%;
+}
+
+.icon {
+  float: right;
+  padding-top: 3px;
+}
+
+@media (min-width: 100px) {
+  .logo-image{
+    width: 200px;
+  }
+
+  .menu-list ul {
+    padding-top: 15%;
+    padding-right: 10%;
+  }
+}
+
+@media(min-width: 600px)  {
+  .menu-list ul {
+    padding-top: 8%;
+    padding-right: 5%;
+  }
+}
+
+@media(min-width: 1000px) {
+  .menu-list ul {
+    padding-top: 5%;
+    padding-right: 2%;
+  }
+}
+
+@media(min-width: 1260px) {
+  .logo-image{
+    width: 377px;
+  }
+
+  .menu-list ul {
+    display: none;
+  }
+}
+
+@media(max-width: 1260px) {
+  .menu {
+    display: none;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .fa-list {
+    display: inherit;
+  }
 }
